@@ -1,0 +1,1 @@
+ $p="$env:TEMP\wp.jpg";iwr "https://i.pinimg.com/736x/1d/a7/cf/1da7cfa86ca65168df911b4b575b9b05.jpg" -o $p;add-type @"using System.Runtime.InteropServices;public class w{[DllImport("user32.dll")]public static extern int SystemParametersInfo(int a,int b,string c,int d);}"@;[w]::SystemParametersInfo(20,0,$p,3)
